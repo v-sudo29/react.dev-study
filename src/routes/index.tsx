@@ -4,16 +4,15 @@ import {
   Route,
   RouterProvider
 } from "react-router-dom";
-
-const Home = () => {
-  return <div>Home</div>
-}
+import Home from "./home/Home";
+import ContentLayout from "@/components/layouts/ContentLayout";
 
 const router = createBrowserRouter(
-createRoutesFromElements(
-  <Route path='/' element={<Home />}>
-  </Route>
-)
+  createRoutesFromElements(
+    <Route element={<ContentLayout />}>
+      <Route path='/' element={<Home />}/>
+    </Route>
+  )
 )
 
  export const AppRoutes = () => {
