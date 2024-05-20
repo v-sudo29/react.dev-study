@@ -9,6 +9,5 @@
 }
 
 #root {
-  border: 1px solid red;
-  min-height: 200vh; /* TODO: remove after TopNav implemented */
+  min-height: 100vh;
 }
